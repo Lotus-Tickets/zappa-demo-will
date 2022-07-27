@@ -1,0 +1,25 @@
+https://github.com/zappa/Zappa#initial-deployments
+
+https://aws.amazon.com/blogs/security/a-new-and-standardized-way-to-manage-credentials-in-the-aws-sdks/
+
+https://docs.aws.amazon.com/powershell/latest/userguide/specifying-your-aws-credentials.html
+
+https://bitbucket.org/michaelhudelson/microgue/src/master/microgue/loggers/logger.py
+
+https://stackoverflow.com/questions/44730610/can-zappa-be-used-to-run-functions-directly-non-wsgi-apps
+
+[default]
+region=us-west-2
+output=json
+
+"app_function": "jobs.a.job_a",
+"lambda_handler": "crons.hello",
+"command": "crons.run_job_a",
+
+~/.aws/credentials (Linux/Mac)
+C:\Users\USERNAME\.aws\credentials  (Windows)
+
+[default]
+aws_access_key_id = ACCESS_KEY
+aws_secret_access_key = SECRET_KEY
+aws_session_token = TOKEN

@@ -1,0 +1,20 @@
+{
+    "dev": {
+        
+        "profile_name": "default",
+        "project_name": "zappa-demo",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-demo-2",
+        "events": [
+            {
+                "function": "crons.run_job_a",
+                "expression": "rate(1 minute)"
+            },
+            {
+                "function": "crons.run_job_b",
+                "expression": "rate(2 minutes)"
+            }
+        ]
+    }
+
+}
