@@ -5,14 +5,15 @@
         "project_name": "zappa-demo",
         "runtime": "python3.9",
         "s3_bucket": "zappa-demo-2",
+        "keep_warm": false,
         "events": [
             {
-                "function": "crons.run_job_a",
-                "expression": "rate(1 minute)"
+                "function": "jobs.raihan_a.invoke", 
+                "expression": "rate(1 hour)" 
             },
             {
-                "function": "crons.run_job_b",
-                "expression": "rate(2 minutes)"
+                "function": "jobs.raihan_b.invoke", 
+                "expression": "rate(3 hours)" 
             }
         ]
     }
